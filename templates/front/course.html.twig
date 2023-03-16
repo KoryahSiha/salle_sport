@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html.twig' %}
+
+{% block title %}Cours - {{ parent() }}{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Cours</title>
-</head>
-<body>
-    <h1>Symfo Sport</h1>
-    <h2>Cours</h2>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    {{ parent() }} <h2>Cours</h2>
     <ul>
         <li>Lundi 19h à 21h zumba</li>
         <li>Mardi 19h30 à 21h30 pilate</li>
@@ -17,5 +20,4 @@
         <li>Vendredi 20h à 22h hiit</li>
         <li>Samedi 9h à 11h yoga</li>
     </ul>
-</body>
-</html>
+{% endblock %}

@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil - {{ parent() }}{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Page d'accueil</title>
-</head>
-<body>
-    <h1>Symfo Sport</h1>
-    <h2>Page d'accueil</h2>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    {{ parent() }} <h2>Page d'accueil</h2>
     <img src={{asset("img/salle-exercise.jpg")}} alt="Salle de sport" width = "40%">
     <img src={{asset("img/salle-machine-1623008.jpg")}} alt="Machine de sport" width = "40%">
     <img src={{asset("img/salle-sports1135753.jpg")}} alt="Salle de sport" width="40%">
-</body>
-</html>
+{% endblock %}
