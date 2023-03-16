@@ -1,3 +1,42 @@
 body {
+    margin: 20px;
     background-color: lightblue;
+}
+
+.contact__coordonnees {
+    padding: 15px
+}
+
+iframe {
+    margin: 30px;
+
+}
+
+.form {
+    margin: 10px;
+    width: 60%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgb(106, 106, 255);
+}
+
+.form__input {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: start;
+}
+
+.form__input--textarea {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+}
+
+button {
+    display: flex;
+    align-items: end;
 }
