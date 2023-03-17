@@ -3,8 +3,19 @@ body {
     background-color: lightblue;
 }
 
+.home__text {
+    padding: 20px;
+    width: 40%;
+    text-align: justify;
+}
+
+.contact {
+    display: flex;
+}
+
 .contact__coordonnees {
-    padding: 15px
+    margin: 10px;
+    padding: 15px;
 }
 
 iframe {
@@ -25,10 +36,10 @@ iframe {
     display: flex;
     flex-direction: column;
     width: 60%;
-    text-align: start;
 }
 
 .form__input--textarea {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     min-height: 100px;
